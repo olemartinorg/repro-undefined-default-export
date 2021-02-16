@@ -3,11 +3,15 @@
   "version": "1.0.0",
   "dependencies": {
     "@rollup/plugin-commonjs": "^17.1.0",
+    "@types/node": "^14.14.28",
+    "mocha": "^8.3.0",
     "rollup": "^2.39.0",
     "rollup-plugin-commonjs-alternate": "^0.7.2"
   },
   "scripts": {
-    "alternate": "rollup -c rollup.config.alternate.js; node output.alternate.js",
-    "standard": "rollup -c rollup.config.standard.js; node output.standard.js"
+    "pretests": "npm run build:alternate; npm run build:standard",
+    "tests": "mocha test-es.mjs test-cjs.js",
+    "build:alternate": "rollup -c rollup.config.alternate.js",
+    "build:standard": "rollup -c rollup.config.standard.js"
   }
 }

@@ -1,10 +1,10 @@
 import commonjs from 'rollup-plugin-commonjs-alternate';
 
 export default {
-    input: 'src/index.js',
+    input: 'src/cjs.js',
     output: [{
-        file: 'output.alternate.js',
-        format: 'iife',
+        file: 'output.alternate.mjs',
+        format: 'es',
     }],
     plugins: [
         commonjs(),
