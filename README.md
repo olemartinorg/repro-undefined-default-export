@@ -10,3 +10,5 @@ npm run tests
 # History
 https://github.com/zloirock/core-js/issues/764#issuecomment-744648246  
 https://github.com/zloirock/core-js/pull/896#issuecomment-779866057  
+https://github.com/olemartinorg/core-js-firefox-bug  
+https://github.com/PepsRyuu/rollup-plugin-commonjs-alternate/pull/3  
